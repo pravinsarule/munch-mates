@@ -8,7 +8,7 @@ require("dotenv").config();
 const app = express();
 
 // ✅ Allow multiple origins dynamically
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["https://munchmate-user.netlify.app", "http://localhost:3001"];
 app.use(
   cors({
     origin: function (origin, callback) {
